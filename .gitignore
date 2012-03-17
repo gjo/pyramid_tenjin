@@ -3,6 +3,7 @@
 *.pyo
 *.egg-info/
 .DS_Store
+.coverage
 .installed.cfg
 bin/
 build/
