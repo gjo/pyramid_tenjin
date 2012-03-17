@@ -5,7 +5,7 @@ from wsgiref.simple_server import make_server
 from pyramid.config import Configurator
 
 
-def testview(request):
+def view1(request):
     return {'aaa': u'テスト', 'bbb': datetime.datetime.now()}
 
 
@@ -13,7 +13,7 @@ def get_app():
     config = Configurator()
     config.include('pyramid_tenjin')
     config.add_route('root', '/')
-    config.add_view(testview, route_name='root', renderer='testview.tenjin')
+    config.add_view(view1, route_name='root', renderer='view1.tenjin')
     return config.make_wsgi_app()
 
 def run_app():

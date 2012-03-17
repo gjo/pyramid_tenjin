@@ -9,5 +9,5 @@ class TenjinTestCase(unittest.TestCase):
         from .testapp import get_app
         testapp = webtest.TestApp(get_app())
         response = testapp.get('/', status=200)
-        self.failUnless('Pyramid' in response.body)
+        self.failUnless('PyramidTenjin' in response.body)
         return
