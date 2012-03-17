@@ -5,6 +5,7 @@
 .DS_Store
 .coverage
 .installed.cfg
+.tox/
 bin/
 build/
 develop-eggs/

@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 
 import unittest
+import webtest
 
-class TenjinTestCase(unittest.TestCase):
+
+class PyramidTenjinTestCase(unittest.TestCase):
+
     def test_1(self):
         import pyramid_tenjin
-        import webtest
         from .testapp import get_app
         testapp = webtest.TestApp(get_app())
         response = testapp.get('/', status=200)
