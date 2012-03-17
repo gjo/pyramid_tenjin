@@ -1,0 +1,17 @@
+<!DocType html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Test view</title>
+  </head>
+  <body>
+    <h1>Test view</h1>
+    <p>${aaa}</p>
+    <p>${bbb}</p>
+    <ul>
+      <?py for i in range(10): ?>
+      <li>${i}</li>
+      <?py #endfor ?>
+    </ul>
+  </body>
+</html>
